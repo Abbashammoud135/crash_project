@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>crash</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Crash Bandicoot</h1>
+    <section class="navbar">
+      <nav>
+        <ul id='MenuItems'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Desription</a></li>
+          <li><a href='#'>Gallery</a></li>
+          <li><a href='#'>join</a></li>
+          <li><a href='index.html' class="log">Logout</a></li>
+        </ul>
+      </nav>
+      </div>
+  </header>
+  <main>
+    <section class="welcome">
+
+      <video autoplay muted loop id="myVideo">
+        <source src="videoback.mp4" type="video/mp4">
+      </video>
+      <div class="content">
+        <img src="crashmain.png" alt="it's crash game">
+        <img src="lineoverimg.png" alt="line" class="line">
+        <p>The player controls Crash, a genetically enhanced bandicoot created by the mad scientist Doctor Neo Cortex.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="description">
+      <h2>Description</h2>
+      <p>The game Crash is famous among players for its simple and engaging gameplay. It is mostly preferred by
+        fast-paced games lovers. The concept is pretty simple.<span id="dots">...</span><span id="more"> The players are
+          given time to place bets and after the betting period expires, the odds progressively grow until the growth
+          vector randomly crashes. That is called “Crash”. Hence, the players need to cash out before the multiplier
+          stops and get their winnings. Results are calculated by multiplying the bet amount and the odds the user
+          cashed out with. Besides the extreme excitement the game gives, the fair results are guaranteed, too. Each
+          outcome is predefined by RNG which makes the process completely transparent for your users. The players are
+          provided with the coded game result 5 rounds prior. </span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+    </section></div>
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="imagescontainer">
+        <img src="3.png">
+        <img src="2.png">
+        <img src="4.jpg" class="item3">
+        <img src="hero.avif">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; crash fan club 2023</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>
