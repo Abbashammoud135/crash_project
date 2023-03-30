@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 
-.full-page{
+body{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(113, 184, 174, 0.4),rgba(35, 44, 37, 0.425)),url(loginback1.jpg);
-	background-position: center;
+    background-image: linear-gradient(rgba(113, 184, 174, 0.4),rgba(35, 44, 37, 0.425)),url(back12.png);
+	background-position: top;
 	background-size: cover;
-	position: absolute;
+	position: fixed;
 }
 
 .navbar
